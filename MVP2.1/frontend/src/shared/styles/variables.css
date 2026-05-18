@@ -1,0 +1,66 @@
+/**
+ * variables.css - 全局CSS变量
+ * 提取自UI设计稿配色，所有组件的配色都应使用这些变量。
+ * 在 main.js 中 import 此文件即可全局生效。
+ */
+
+:root {
+  /* === 品牌主色系（橙红色系） === */
+  --primary: #E88B7C;
+  --primary-light: #F5A89A;
+  --primary-dark: #D47366;
+  --primary-hover: #D67B6C;
+  --primary-bg: #FFF5F2;
+
+  /* === 辅助色 === */
+  --secondary: #5B8DB8;
+  --secondary-light: #7BA8CC;
+  --success: #6BCB77;
+  --warning: #FFD93D;
+  --danger: #E84545;
+  --info: #9FB4CC;
+
+  /* === 中性色 === */
+  --bg-page: #FFF8F6;
+  --bg-card: #FFFFFF;
+  --bg-sidebar: #E88B7C;
+  --bg-hover: #FFF0ED;
+  --text-primary: #3D3D3D;
+  --text-secondary: #888888;
+  --text-tertiary: #BBBBBB;
+  --border: #F0D5D0;
+  --border-light: #F5E5E0;
+  --divider: #F0E0DC;
+
+  /* === 情绪色（与constants.js一致） === */
+  --emotion-ecstasy: #FF6B6B;
+  --emotion-joy: #FFD93D;
+  --emotion-content: #6BCB77;
+  --emotion-neutral: #B8B8B8;
+  --emotion-disappointed: #9FB4CC;
+  --emotion-sad: #5B8DB8;
+  --emotion-angry: #E84545;
+  --emotion-despair: #4A0E0E;
+
+  /* === 标签色 === */
+  --tag-bg: #FFE8E0;
+  --tag-text: #D47366;
+  --tag-ai-bg: #F0F4FF;
+  --tag-ai-text: #667eea;
+
+  /* === 尺寸 === */
+  --sidebar-width: 235px;
+  --header-height: 60px;
+  --card-radius: 16px;
+  --btn-radius: 10px;
+  --input-radius: 8px;
+
+  /* === 阴影 === */
+  --shadow-sm: 0 2px 8px rgba(232, 139, 124, 0.08);
+  --shadow-md: 0 4px 16px rgba(232, 139, 124, 0.12);
+  --shadow-lg: 0 8px 32px rgba(232, 139, 124, 0.16);
+
+  /* === 过渡 === */
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.3s ease;
+}
