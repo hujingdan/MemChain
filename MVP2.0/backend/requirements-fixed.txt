@@ -1,0 +1,28 @@
+# Web框架和API - 升级到兼容Python 3.10的版本
+fastapi==0.104.1          # 支持Pydantic v2，稳定版本
+uvicorn[standard]==0.24.0 # ASGI服务器，带标准依赖
+python-multipart==0.0.6   # 文件上传支持
+pydantic==2.5.0           # 数据验证 - 大版本升级
+
+# 数据库 - 升级到兼容版本
+sqlalchemy==2.0.23        # ORM框架 - 大版本升级
+alembic==1.12.1           # 数据库迁移
+# psycopg2-binary==2.9.9  # 如需PostgreSQL再安装，SQLite不需要
+
+# 存储和文件处理
+pillow==10.1.0            # 图像处理
+python-magic-bin==0.4.14  # Windows下文件类型检测（注意是-magic-bin）
+
+# 认证和安全
+python-jose[cryptography]==3.3.0  # JWT支持
+passlib[bcrypt]==1.7.4    # 密码哈希
+python-dotenv==1.0.0      # 环境变量管理
+
+# 开发工具
+pytest==7.4.3             # 测试框架
+httpx==0.25.0             # 异步HTTP客户端（FastAPI测试需要）
+
+#注：以上版本号是根据2024年6月的最新稳定版本选择的，确保兼容Python 3.10。请根据实际需求调整版本号，特别是数据库驱动（如psycopg2）和其他依赖项。
+
+#另：原requirements中的torch、transformers、boto3、redis、scikit-learn等AI/云服务相关依赖暂时不安装。这些包体积巨大（torch约2GB）且当前代
+#码中AI功能均为空实现，安装它们只会浪费时间。等后续真正开发AI功能时再按需安装
